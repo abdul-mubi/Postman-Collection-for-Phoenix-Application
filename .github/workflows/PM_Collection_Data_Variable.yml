@@ -27,7 +27,8 @@ jobs:
           newman run 'In Warranty flow Collection with external data.postman_collection.json' \
           -e QA.postman_environment.json \
           -d testdata.csv \
-          -r cli,htmlextra
+          -r cli,htmlextra \
+          --reporter-htmlextra-export ./newman/index.html
       
       - name: Newman-htmlextra Report
         if: always()
