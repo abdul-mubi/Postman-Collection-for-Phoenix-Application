@@ -7,7 +7,7 @@ on:
     - cron: 30 05 * * *    
 jobs:
   run-test:
-    runs-on: ubuntu-latest
+    runs-on: postman-Collection
     steps:
       - name: checkout code
         uses: actions/checkout@v6.0.2
